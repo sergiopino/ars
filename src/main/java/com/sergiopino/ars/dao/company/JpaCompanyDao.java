@@ -1,8 +1,5 @@
 package com.sergiopino.ars.dao.company;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.stereotype.Repository;
 
 import com.sergiopino.ars.dao.JpaDao;

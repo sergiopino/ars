@@ -1,0 +1,17 @@
+<div class="pull-right">
+	<a href="#!/company/create" class="btn btn-default" ng-show="hasRole('admin')" title="Create"><span class="glyphicon glyphicon-plus"></span></a>
+</div>
+<div class="page-header">
+	<h3>Companies</h3>
+</div>
+
+<div ng-repeat="company in companies">
+	<hr />
+	<div class="pull-right">
+		<a href="" ng-click="deleteEntry(company)" class="btn btn-xs btn-default" ng-show="hasRole('admin')" title="delete"><span class="glyphicon glyphicon-trash"></span></a>
+		<a href="#!/company/edit/{{company.id}}" class="btn btn-xs btn-default" ng-show="hasRole('admin')" title="edit"><span class="glyphicon glyphicon-pencil"></span></a>
+	</div>
+	<h4>{{company.name}}</h4>
+	<p>{{company.address}}</p>
+</div>
+<hr />
